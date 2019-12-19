@@ -4,8 +4,11 @@ import com.example.aws.awselasticbeanstalkexample.bean.Calculation;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RequestMapping
+@RestController
 public class CalculationController {
 
 //Test comment to commit
@@ -24,7 +27,7 @@ public class CalculationController {
         return "showMessage";
     }
 
-    @GetMapping("/hello")
+    @GetMapping
     public String hello(){
         return "Hello";
     }
