@@ -1,0 +1,24 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Add user</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Add two numbers</h1>
+
+<form action="#" th:action="@{/addCalculation}" th:object="${calculation}" method="post">
+    <p>
+        Number One: <input type="text" required th:field="*{numberOne}">
+    </p>
+    <p>
+        Number Two: <input type="text" required th:field="*{numberTwo}">
+    </p>
+    <p>
+        <input type="submit" value="Submit"/> <input type="reset" value="Reset">
+    </p>
+</form>
+
+</body>
+</html>

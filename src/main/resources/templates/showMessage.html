@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Show message</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+
+<h1>Result</h1>
+
+<p th:text="'Number One: ' + ${calculation.numberOne}"></p>
+<p th:text="'Number Two: ' + ${calculation.numberTwo}"></p>
+<p th:text="'Sum: ' + ${calculation.sum}"></p>
+<a href="/addCalculation">Submit another message</a>
+
+</body>
+</html>
