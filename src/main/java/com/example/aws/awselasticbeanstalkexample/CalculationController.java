@@ -1,11 +1,15 @@
 package com.example.aws.awselasticbeanstalkexample;
 
 import com.example.aws.awselasticbeanstalkexample.bean.Calculation;
+import jdk.jfr.Frequency;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RequestMapping("/base")
+@RestController
 public class CalculationController {
 
 //Test comment to commit
@@ -22,6 +26,11 @@ public class CalculationController {
         calculateSum(calculation);
 
         return "showMessage";
+    }
+
+    @GetMapping
+    public String hello(){
+        return "Hello!";
     }
 
     public void calculateSum(Calculation calculation){
