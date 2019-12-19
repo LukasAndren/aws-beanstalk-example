@@ -21,7 +21,7 @@ class AwsElasticBeanstalkExampleApplicationTests {
 
 		calculationController.calculateSum(calculation);
 
-		assert "20".equals(calculation.getSum());
+		assert "15".equals(calculation.getSum());
 
 	}
 
