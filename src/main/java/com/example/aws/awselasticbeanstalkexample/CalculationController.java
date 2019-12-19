@@ -27,7 +27,7 @@ public class CalculationController {
         return "showMessage";
     }
 
-    @GetMapping
+    @GetMapping("/hello")
     public String hello(){
         return "Hello";
     }
