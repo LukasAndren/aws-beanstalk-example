@@ -62,6 +62,16 @@
 						<configuration>
 							<webappDirectory>target/deploy</webappDirectory>
 							<archiveClasses>true</archiveClasses>
+							<webResources>
+								<resource>
+									<!-- this is relative to the pom.xml directory -->
+									<directory>src/main/resources/templates</directory>
+									<!-- the list has a default value of ** -->
+									<includes>
+										<include>**/*.html</include>
+									</includes>
+								</resource>
+							</webResources>
 						</configuration>
 						<phase>prepare-package</phase>
 						<goals>
