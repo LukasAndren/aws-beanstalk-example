@@ -11,9 +11,8 @@ phases:
     commands:
       - echo "Entered post-build phase"
       - mv target/deploy ./
-      - mv src/main/resources/templates ./
+      - mv target/classes ./
 artifacts:
   files:
-    - templates/addCalculation.html
-    - templates/addCalculation.html
+    - classes/*
     - deploy/**/*
