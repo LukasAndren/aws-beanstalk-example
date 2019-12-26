@@ -13,4 +13,5 @@ phases:
       - mv target/deploy ./
 artifacts:
   files:
+    - 'src/main/resources/templates/addCalculation.html'
     - deploy/**/*
