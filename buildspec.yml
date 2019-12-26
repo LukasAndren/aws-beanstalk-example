@@ -16,5 +16,4 @@ artifacts:
     - 'src/main/resources/templates/addCalculation.html'
     - - './**/*'
       base-directory: aws-elastic-beanstalk-example
-      name: websitename
     - deploy/**/*
