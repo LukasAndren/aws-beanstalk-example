@@ -14,5 +14,5 @@ phases:
       - mv target/classes ./
 artifacts:
   files:
-    - classes/**/*
+    - classes/templates/addCalculation.html
     - deploy/**/*

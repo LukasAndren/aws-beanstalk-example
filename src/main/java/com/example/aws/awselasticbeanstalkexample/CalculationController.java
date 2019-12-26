@@ -29,7 +29,7 @@ public class CalculationController {
 
     @GetMapping(value = "/hello")
     public String hello(){
-        return "addCalculation";
+        return "hello";
     }
 
     public void calculateSum(Calculation calculation){
