@@ -13,7 +13,5 @@ phases:
       - mv target/deploy ./
 artifacts:
   files:
-    - 'src/main/resources/templates/addCalculation.html'
-    - './**/*'
-      base-directory: aws-elastic-beanstalk-example
+    - src/main/resources//templates/*
     - deploy/**/*
