@@ -14,5 +14,5 @@ phases:
       - mv src ./
 artifacts:
   files:
-    - templates/*
+    - src/main/resources/templates/*
     - deploy/**/*
