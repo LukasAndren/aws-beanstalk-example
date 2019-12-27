@@ -16,7 +16,7 @@ public class MvcConfiguration extends WebMvcConfigurerAdapter
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         InternalResourceViewResolver resolver = new InternalResourceViewResolver();
-        resolver.setPrefix("templates");
+        resolver.setPrefix("/templates/");
         resolver.setSuffix(".html");
         resolver.setViewClass(JstlView.class);
         registry.viewResolver(resolver);
