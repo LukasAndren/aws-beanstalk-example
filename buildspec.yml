@@ -11,8 +11,6 @@ phases:
     commands:
       - echo "Entered post-build phase"
       - mv target/deploy ./
-      - mv src ./
 artifacts:
   files:
-    - src/main/resources/templates/*
     - deploy/**/*

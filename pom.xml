@@ -65,7 +65,7 @@
 							<webResources>
 								<resource>
 									<!-- this is relative to the pom.xml directory -->
-									<directory>src/main/resources/templates</directory>
+									<directory>target/classes/templates</directory>
 									<!-- the list has a default value of ** -->
 									<includes>
 										<include>*.html</include>
