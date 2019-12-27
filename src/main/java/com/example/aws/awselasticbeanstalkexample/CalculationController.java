@@ -13,9 +13,8 @@ public class CalculationController {
 
 //Test comment to commit
 
-    @GetMapping("/addCalculation")
+    @RequestMapping("/addCalculation")
     public String sendForm(Calculation calculation){
-
         return "addCalculation";
     }
 
